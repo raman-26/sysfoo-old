@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v6
       
       - name: Maven Test
-        run: mvm test
+        run: mvn test
       
       - name: Clean package
         run: mvn clean
@@ -20,5 +20,5 @@ jobs:
         run: mvn package
 
       - name: View files
-        run: ls -lrt
+        run: ls -lrt target
   
